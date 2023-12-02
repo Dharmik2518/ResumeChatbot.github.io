@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #e4ecf1;
+            /* Background color - Change to your preferred color */
+            color: #ffffff;
+            /* Text color - Change to your preferred color */
+            padding-top: 50px;
+            /* Add space for fixed navbar */
+        }
+
+        .chatbot-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50px;
+            border: 15px solid blueviolet;
+        }
+
+        df-messenger {
+            --df-messenger-bot-message: #030303;
+            --df-messenger-button-titlebar-color: #6578e6;
+            --df-messenger-chat-background-color: #f0f1f7;
+            --df-messenger-font-color: white;
+            --df-messenger-send-icon: #cc2a0a;
+            --df-messenger-user-message: #3771ee;
+        }
+
+        h5 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background-color: #d0d6f3;
+        }
+
+        .card {
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 20px;
+        }
+        .container{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container p{
+            font-size: 30px;
+            color:crimson;
+        }
+    </style>
+    <title>Responsive Webpage with Bootstrap</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">🤖 ResumeBot</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mt-4 text-center text-dark">
+        <h1>🤖 Welcome to RESUME-BOT 🤖!</h1>
+        <p>
+            "Transform your resume with our Personal Resume Chatbot! Engage in dynamic conversations, get personalized guidance, and craft a standout resume effortlessly."
+        </p>
+
+        <!-- Chatbot Image -->
+        <div class="chat-container">
+            <img src="https://i.pinimg.com/originals/aa/29/c3/aa29c30acb037c359bff34f60f6fb0df.gif"
+                alt="Chatbot" class="chatbot-img img-fluid">
+        </div>
+    </div>
+        <div>
+            <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+            <df-messenger intent="WELCOME" chat-title="ResumeBotW" agent-id="f5312ad2-449c-4b0c-9e22-a4fee70dcba8"
+                chat-icon="https://png.pngtree.com/png-vector/20230225/ourmid/pngtree-smart-chatbot-cartoon-clipart-png-image_6620453.png"
+                language-code="en"></df-messenger>
+        </div>
+        <!-- Bootstrap JS and Popper.js -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
